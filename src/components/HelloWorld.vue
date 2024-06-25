@@ -1,41 +1,5 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
-</script>
-
-<template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
-  </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
-</template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
+slides: [
+        { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXiziQIqi_TBPcnSkc-3K7tPV_pevLW7AbGw&s', alt: 'Image 1' },
+        { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGINgoN6NxthDeYC9xkm5hb9BoKu91Ui5S3A&s', alt: 'Image 2' },
+        { src: 'https://theblast.prod.media.wordpress.mattersmedia.io/2022/03/MEGA786564_019-scaled-e1648214392202.jpeg', alt: 'Image 3' }
+      ],

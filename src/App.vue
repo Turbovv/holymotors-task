@@ -1,3 +1,15 @@
 <template>
-    <div class="text-red-500">asd</div>
+  <div>
+    <Navbar />
+  </div>
 </template>
+
+<script>
+import Navbar from './components/Navbar/Navbar.vue'
+export default {
+  components: {
+    Navbar
+  }
+}
+</script>
+asd
