@@ -54,18 +54,18 @@ export default {
     data() {
         return {
             BrandLogos: [
-                {image: ClientsLogoImage1, alt: "Image 1"},
-                {image: ClientsLogoImage2, alt: 'Image 2'},
-                {image: ClientsLogoImage3, alt: 'Image 3'},
-                {image: ClientsLogoImage11,alt:'Image 4'},
-                {image: ClientsLogoImage8, alt: 'Image 5'},
-                {image: ClientsLogoImage10, alt: 'Image 6'},
-                {image: ClientsLogoImage7, alt: 'Image 7'},
-                {image: ClientsLogoImage6, alt: 'Image 8'},
-                {image: ClientsLogoImage4, alt: 'Image 9'},
-                {image: ClientsLogoImage5, alt: 'Image 10'},
-                {image: ClientsLogoImage9, alt: 'Image 11'},
-                {image: ClientsLogoImage12, alt: 'Image 12'},
+                { image: ClientsLogoImage1, alt: "Image 1" },
+                { image: ClientsLogoImage2, alt: 'Image 2' },
+                { image: ClientsLogoImage3, alt: 'Image 3' },
+                { image: ClientsLogoImage11, alt: 'Image 4' },
+                { image: ClientsLogoImage8, alt: 'Image 5' },
+                { image: ClientsLogoImage10, alt: 'Image 6' },
+                { image: ClientsLogoImage7, alt: 'Image 7' },
+                { image: ClientsLogoImage6, alt: 'Image 8' },
+                { image: ClientsLogoImage4, alt: 'Image 9' },
+                { image: ClientsLogoImage5, alt: 'Image 10' },
+                { image: ClientsLogoImage9, alt: 'Image 11' },
+                { image: ClientsLogoImage12, alt: 'Image 12' },
             ]
         };
     }
@@ -74,14 +74,17 @@ export default {
 
 <style scoped>
 @import '../../style.css';
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 * {
     margin: 0;
 }
+
 .wrapper {
     width: 100%;
     margin-inline: auto;
@@ -94,11 +97,13 @@ export default {
             rgba(0, 0, 0, 1) 80%,
             rgba(0, 0, 0, 0));
 }
+
 .scroll-container {
     display: flex;
     align-items: center;
     width: calc(var(--item-width) * 12);
 }
+
 .scroll-item {
     width: var(--item-width);
     height: var(--item-height);
@@ -106,20 +111,25 @@ export default {
     justify-content: center;
     align-items: center;
 }
+
 .scroll-container-1 {
     animation: scrollLeft var(--animation-duration-1) linear infinite;
 }
+
 .scroll-container-2 {
     animation: scrollRight var(--animation-duration-2) linear infinite;
 }
+
 @keyframes scrollLeft {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(calc(var(--item-width) * -6));
     }
 }
+
 @keyframes scrollRight {
     0% {
         transform: translateX(calc(var(--item-width) * -6));
@@ -129,29 +139,36 @@ export default {
         transform: translateX(0);
     }
 }
+
 @media (min-width: 768px) {
     .wrapper {
         height: var(--md-wrapper-height);
     }
+
     .scroll-item {
         width: var(--md-item-width);
         height: var(--md-item-height);
     }
+
     .scroll-container {
         width: calc(var(--md-item-width) * 12);
     }
+
     @keyframes scrollLeft {
         0% {
             transform: translateX(0);
         }
+
         100% {
             transform: translateX(calc(var(--md-item-width) * -6));
         }
     }
+
     @keyframes scrollRight {
         0% {
             transform: translateX(calc(var(--md-item-width) * -6));
         }
+
         100% {
             transform: translateX(0);
         }
