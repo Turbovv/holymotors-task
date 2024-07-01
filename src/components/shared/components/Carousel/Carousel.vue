@@ -172,7 +172,7 @@ export default {
       this.updateProgressBars();
     });
     this.updateProgressBars();
-    // this.autoSlide = setInterval(this.nextSlide, 3000);
+    this.autoSlide = setInterval(this.nextSlide, 2500);
   },
   beforeUnmount() {
     clearInterval(this.autoSlide);

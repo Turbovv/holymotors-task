@@ -6,7 +6,7 @@
       <template v-slot:slide-content="{ slide, index, currentIndex }">
         <div class="w-full h-auto p-6  md:p-10 order-1 md:order ">
           <div class="h-full relative  ">
-            <div class="absolute bottom-0 max-lg:w-5/12  border   left-0 right-0 flex justify-between items-center p-4 lg:hidden">
+            <div class="absolute bottom-0 max-lg:w-5/12 left-0 right-0 flex justify-between items-center p-4 lg:hidden">
               <div class="slide-number text-black text-lg md:text-2xl">
                 0{{ currentIndex + 1 }}
               </div>
