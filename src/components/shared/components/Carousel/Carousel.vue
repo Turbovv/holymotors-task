@@ -32,18 +32,6 @@ export default {
       type: String,
       default: 'default'
     },
-    imageClass: {
-      type: String,
-      default: ''
-    },
-    nextButtonClass: {
-      type: String,
-      default: ''
-    },
-    prevButtonClass: {
-      type: String,
-      default: ''
-    },
     dflex: {
       type: String,
       default: ''
@@ -56,38 +44,6 @@ export default {
       type: String,
       default: ''
     },
-    h1Class: {
-      type: String,
-      default: ''
-    },
-    pClass: {
-      type: String,
-      default: ''
-    },
-    ptwoClass: {
-      type: String,
-      default: ''
-    },
-    imageText: {
-      type: String,
-      default: ''
-    },
-    textContainerClass: {
-      type: String,
-      default: ''
-    },
-    imageContainerClass: {
-      type: String,
-      default: ''
-    },
-    buttonsClass: {
-      type: String,
-      default: ''
-    },
-    slideNumberClass: {
-      type: String,
-      default: ''
-    }
   },
   data() {
     return {
